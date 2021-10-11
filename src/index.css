@@ -1,3 +1,19 @@
+
+:root{
+    
+    --peach: #ee6723;
+    --selection-blue: #3b5998;
+    --grapefruit: #ff5500;
+    --teflon: #554d56;
+    --gandalf: #979197;
+    --max-width:1040px;
+}
+::selection {
+  background: var(--peach);
+  color:#fff
+  }
+ 
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,7 +21,58 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  
 }
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-weight: normal;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  
+}
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.section {
+  padding: 8rem 0;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+h1 {
+  line-height: 63px;
+  font-family: Roboto Slab, Roboto, Helvetica, sans-serif;
+  font-weight: 300;
+  color: var(--teflon);
+}
+h2 {
+  line-height: 21px;
+  font-size: 1.2rem;
+  color: var(--teflon);
+  margin:12px 0 0
+}
+h3 {
+  margin: 72px 0 36px 0;
+  line-height: 24px;
+  font-family: Roboto Slab, Roboto, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--gandalf);
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
